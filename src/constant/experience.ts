@@ -4,8 +4,8 @@ export const experience = [
     company: "Dornach (ZieglerGroup)",
     position: "Full Stack Developer",
     timeline: "Oct 2023 - Oct 2024",
-    tech: "TypeScript, Node.js, Vue.js, Sass, Socket.IO, MongoDB, Redis, Docker",
-    desc: "Developing comprehensive web application that seamlessly integrates a variety of essential tools such as spreadsheets, maps, audio and video communication, forms, and more into a unified platform. This all-in-one solution also facilitates robust collaboration features tailored for businesses, enabling teams to work together efficiently and effectively within a single, organized environment",
+    tech: "TypeScript, React, Next, TailwindCSS, ReactQuery, MongoDB, Docker",
+    desc: "At Ziegler Group, an international logistics company, I played a key role in the development of the MyZiegler project.My focus was on the frontend, where I was responsible for building a clear and intuitive interface tailored to business clients.The goal of the application was to empower customers to independently request quotes and make bookings, ensuring a seamless and user- friendly experience.I closely monitored and guided the project’s development, ensuring that the final product met both the high standards of Ziegler Group and the needs of its users.",
     remote: true,
   },
   {

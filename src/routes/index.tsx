@@ -38,7 +38,7 @@ const Experience = ({
 
 export default function Home() {
   return (
-    <main class="my-20 mx-auto w-full max-w-2xl flex flex-col gap-16">
+    <main class="p-5 py-20 mx-auto w-full max-w-2xl flex flex-col gap-16">
       <section class="flex text-sm">
         <div class="flex flex-col gap-4 basis-2/3">
           <div>
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </div>
         <div class="flex flex-col basis-1/3 gap-4 p-5">
-          <img src="/images/me.png" class="object-contain w-auto rounded-lg" alt="" />
+          <img src="/images/me.jpeg" class="object-contain w-auto rounded-lg" alt="" />
           <div class="flex flex-col items-end gap-1">
 
             <button class="btn-link" onClick={() => window.print()}>
