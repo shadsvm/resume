@@ -38,8 +38,8 @@ const Experience = ({
 
 export default function Home() {
   return (
-    <main class="p-5 py-20 mx-auto w-full max-w-2xl flex flex-col gap-16">
-      <section class="flex text-sm">
+    <main class="p-5 sm:py-20 mx-auto w-full max-w-2xl flex flex-col gap-16">
+      <section class="flex flex-col-reverse sm:flex-row gap-20 sm:gap-10 text-sm">
         <div class="flex flex-col gap-4 basis-2/3">
           <div>
             <h1>Samuel Kamiński</h1>
@@ -57,9 +57,9 @@ export default function Home() {
           <div class="flex flex-col gap-1 mt-5">
 
 
-            <a class="btn-link" href="mailto:contact@svm.codes">
+            <a class="btn-link" href="mailto:contact@svm.engineer">
               <Mail size={16} />
-              contact@svm.codes
+              contact@svm.engineer
             </a>
             <a class="btn-link" href="tel:+48530643361">
               <Phone size={16} />
@@ -68,8 +68,8 @@ export default function Home() {
 
           </div>
         </div>
-        <div class="flex flex-col basis-1/3 gap-4 p-5">
-          <img src="/images/me.jpeg" class="object-contain w-auto rounded-lg" alt="" />
+        <div class="flex flex-row-reverse sm:flex-col items-center basis-1/3 gap-4 p-5">
+          <img src="/images/me.jpeg" class="object-contain w-20 h-20 sm:h-auto sm:w-auto rounded " alt="" />
           <div class="flex flex-col items-end gap-1">
 
             <button class="btn-link" onClick={() => window.print()}>
