@@ -1,4 +1,12 @@
-import { Github, Globe, Linkedin, LucideIcon, Mail, Phone, Printer } from "lucide-solid";
+import {
+  Github,
+  Globe,
+  Linkedin,
+  LucideIcon,
+  Mail,
+  Phone,
+  Printer,
+} from "lucide-solid";
 import { experience } from "~/constant/experience";
 
 const Experience = ({
@@ -18,44 +26,45 @@ const Experience = ({
 }) => {
   return (
     <div class="">
-      <div class="flex text-gray-900 dark:text-gray-100 justify-between items-center">
-        <h3 class="text-lg font-semibold">{company}</h3>
-        <h3 class="text-sm font-semibold">{timeline}</h3>
+      <div class="flex text-black dark:text-white justify-between items-center">
+        <h2 class="font-semibold">{company}</h2>
+        <h3 class="font-semibold">{timeline}</h3>
       </div>
-      <div class="flex justify-between items-center text-gray-800 dark:text-gray-200 mb-3">
-        <h3 class="">{position}</h3>
-        <p class="">
-          {remote ? "remote" : "on-site"}
-        </p>
+      <div class="flex justify-between items-center text-gray-800 dark:text-gray-300 mb-3">
+        <h3>{position}</h3>
+        <h4>{remote ? "remote" : "on-site"}</h4>
       </div>
-      <p class="text-xs">{desc}</p>
-      <p class="text-sm my-2">Tech: {tech}</p>
+      <p class="font-thin">{desc}</p>
+      <h3 class=" text-gray-700 dark:text-gray-400 my-2">
+        {tech && "Tech: " + tech}
+      </h3>
     </div>
   );
 };
 
-
-
 export default function Home() {
   return (
     <main class="p-5 sm:py-20 mx-auto w-full max-w-2xl flex flex-col gap-16">
-      <section class="flex flex-col-reverse sm:flex-row gap-20 sm:gap-10 text-sm">
-        <div class="flex flex-col gap-4 basis-2/3">
+      <section class="flex flex-col-reverse sm:flex-row justify-between gap-20 sm:gap-10 text-sm">
+        <div class="flex flex-col gap-4 max-w-xs">
           <div>
-            <h1>Samuel Kamiński</h1>
+            <h1>Samuel Kaminski</h1>
 
             <p class="flex gap-1 justify-start items-center">
               <Globe size={16} />
               Poznan, Poland, CET
             </p>
-
           </div>
           <p>
-            I’m a Full Stack Developer driven by a passion for technology and a love for bringing ideas to life.
-            I guide products from concept to launch with a thoughtful, hands-on approach.
+            I’m a Full Stack Developer driven by a passion for technology and a
+            love for bringing ideas to life. I guide products from concept to
+            launch with a thoughtful, hands-on approach.
           </p>
           <div class="flex flex-col gap-1 mt-5">
-
+            <button class="btn-link" onClick={() => window.print()}>
+              <Printer size={16} />
+              Print my resume
+            </button>
 
             <a class="btn-link" href="mailto:contact@svm.engineer">
               <Mail size={16} />
@@ -65,18 +74,18 @@ export default function Home() {
               <Phone size={16} />
               +48 530-643-361
             </a>
-
           </div>
         </div>
-        <div class="flex flex-row-reverse sm:flex-col items-center basis-1/3 gap-4 p-5">
-          <img src="/images/me.jpeg" class="object-contain w-20 h-20 sm:h-auto sm:w-auto rounded " alt="" />
+
+        <div class="flex flex-row-reverse sm:flex-col items-center gap-4 p-5">
+          <div class="w-16 h-16 sm:w-full sm:h-auto sm:max-w-40 rounded  overflow-hidden">
+            <img
+              src="/images/alsome.jpeg"
+              class="aspect-square object-cover scale-150  "
+              alt=""
+            />
+          </div>
           <div class="flex flex-col items-end gap-1">
-
-            <button class="btn-link" onClick={() => window.print()}>
-              <Printer size={16} />
-              Print my resume
-            </button>
-
             <a class="btn-link" href="https://github.com/shadsvm">
               <Github size={16} />
               shadsvm
@@ -93,11 +102,14 @@ export default function Home() {
       <section class="">
         <h1>Experience</h1>
         <p>
-
-          I bring concepts to life by guiding products from the initial idea to a successful launch.
-          I start by working closely with stakeholders to define the project’s goals and vision.
-          Through years of working on different products, I’ve learned how to deliver a final product that not only meets business needs but also provides a great user experience.
-          My experience, combined with a dedication to continuous learning, makes me a reliable engineer who gets the job done efficiently.
+          I bring concepts to life by guiding products from the initial idea to
+          a successful launch. I start by working closely with stakeholders to
+          define the project’s goals and vision. Through years of working on
+          different products, I’ve learned how to deliver a final product that
+          not only meets business needs but also provides a great user
+          experience. My experience, combined with a dedication to continuous
+          learning, makes me a reliable engineer who gets the job done
+          efficiently.
         </p>
       </section>
 

@@ -6,7 +6,7 @@ export default createHandler(() => (
     document={({ assets, children, scripts }) => (
       <html lang="en">
         <head>
-          <title>SK - Resume </title>
+          <title>svm resume</title>
           <meta name="description" content="Samuel Kaminski, Full Stack Developer" />
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
